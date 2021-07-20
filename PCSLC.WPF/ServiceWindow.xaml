@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PСSLC.WPF"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="PСSLC.WPF.ServiceWindow"
         mc:Ignorable="d"
-        Title="Настройки" Height="264" Width="413.333" WindowStartupLocation="CenterOwner" Closing="Window_Closing" Loaded="Window_Loaded" Icon="Icons/Znak.ico">
+        Title="Настройки" Height="264" Width="413.333" WindowStartupLocation="CenterOwner" Closing="Window_Closing" Loaded="Window_Loaded" Icon="Icons/Znak.ico" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <Style TargetType="TextBox">
             <Style.Triggers>
@@ -19,7 +19,7 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid SnapsToDevicePixels="True">
         
         <Grid x:Name="grid_ServiceControl">
             <Label  Content="Очистка кеша происходит по 2 условиям:" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>

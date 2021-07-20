@@ -9,7 +9,6 @@ namespace PСSLC.Service
     [RunInstaller(true)]
     public partial class Installer : System.Configuration.Install.Installer
     {
-        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         private readonly ServiceInstaller serviceInstaller;
         private readonly ServiceProcessInstaller processInstaller;
@@ -28,13 +27,11 @@ namespace PСSLC.Service
         protected override void OnAfterInstall(IDictionary savedState)
         {
             base.OnBeforeInstall(savedState);
-            _logger.Info("Service Installed");
         }
 
         protected override void OnAfterUninstall(IDictionary savedState)
         {
             base.OnBeforeUninstall(savedState);
-            _logger.Info("Service Uninstalled");
         }
     }
 }
