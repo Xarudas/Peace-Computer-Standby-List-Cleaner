@@ -2,7 +2,6 @@
 using System.ServiceProcess;
 using System.Threading;
 using PСSLC.Core;
-using NLog;
 
 namespace PСSLC.Service
 {
@@ -29,7 +28,7 @@ namespace PСSLC.Service
             {
                 _data = dataReader.Read();
             }
-            catch (NullReferenceException ex)
+            catch (NullReferenceException)
             {
                 throw;
             }
@@ -37,7 +36,7 @@ namespace PСSLC.Service
             {
                 ValidateRegulationsData(_data);
             }
-            catch (ArgumentOutOfRangeException ex)
+            catch (ArgumentOutOfRangeException)
             {
                 throw;
             }
@@ -46,7 +45,7 @@ namespace PСSLC.Service
             {
                 _logicThread.Start();
             }
-            catch (OutOfMemoryException ex)
+            catch (OutOfMemoryException)
             {
                 throw;
             }
@@ -75,7 +74,7 @@ namespace PСSLC.Service
             {
                 _logicThread.Abort();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

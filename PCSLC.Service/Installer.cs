@@ -1,5 +1,4 @@
 ﻿using PСSLC.Core.Consts;
-using NLog;
 using System.Collections;
 using System.ComponentModel;
 using System.ServiceProcess;

@@ -1,5 +1,4 @@
-﻿
-using PСSLC.Core.Consts;
+﻿using PСSLC.Core.Consts;
 
 namespace PСSLC.Service
 {
