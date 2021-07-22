@@ -7,10 +7,6 @@
         mc:Ignorable="d"
         Title="PCSLC" Height="260" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Closing="window_MainWindow_Closing" Icon="Icons/Znak.ico" ShowInTaskbar="False" SizeToContent="WidthAndHeight">
     <Grid SnapsToDevicePixels="True">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="2*"/>
-        </Grid.ColumnDefinitions>
         <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="294" Grid.ColumnSpan="2" Background="#FFF1F1F1">
             <MenuItem Header="Файл">
                 <MenuItem x:Name="menuItem_ServiceSettings" Header="Настройки..." Click="menuItem_ServiceSettings_Click"/>
@@ -36,8 +32,9 @@
             <Button x:Name="button_PurgeStandbyList" Content="Очистить кеш" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Bottom" Width="118" Click="button_PurgeStandbyList_Click" Height="20"/>
             <Border BorderBrush="#FF898989" BorderThickness="1" HorizontalAlignment="Center" Height="104" Margin="0,34,0,36" VerticalAlignment="Center" Width="1"/>
         </Grid>
-        <TextBlock x:Name="textBlock_ServiceInfo" Text="{Binding Path=ServiceInfo}" HorizontalAlignment="Left" Margin="0,198,0,0" VerticalAlignment="Top" Width="163" Height="25" Padding="3,5,0,0" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock_ChannelLink" Text="@Team Peace Duke" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto" Height="auto" TextAlignment="Right" Cursor="Hand" Margin="78.169,203,0,0" MouseLeftButtonUp="textBlock_ChannelLink_Click" Grid.Column="1">
+
+        <TextBlock x:Name="textBlock_ServiceInfo" Text="{Binding Path=ServiceInfo}" HorizontalAlignment="Left" Margin="0,198,0,0" VerticalAlignment="Top" Width="140" Height="25" Padding="3,5,0,0"/>
+        <TextBlock x:Name="textBlock_ChannelLink" Text="@Team Peace Duke" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto" Height="auto" TextAlignment="Right" Cursor="Hand" Margin="180,203,0,0" MouseLeftButtonUp="textBlock_ChannelLink_Click">
             <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </TextBlock.Foreground>
