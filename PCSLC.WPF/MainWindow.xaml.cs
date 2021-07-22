@@ -19,6 +19,7 @@ namespace PСSLC.WPF
         private readonly MemoryCounter _memoryCounter;
         private readonly Thread _updateUIThread;
         private readonly AppDataModel _model;
+        private const string ChannelURL = "https://www.youtube.com/c/ThePeaceDuke";
         
         public MainWindow()
         {
@@ -119,7 +120,7 @@ namespace PСSLC.WPF
 
         private void textBlock_ChannelLink_Click(object sender, MouseButtonEventArgs e)
         {
-            Process.Start("https://www.youtube.com/c/ThePeaceDuke");
+            Process.Start(ChannelURL);
         }
     }
 }

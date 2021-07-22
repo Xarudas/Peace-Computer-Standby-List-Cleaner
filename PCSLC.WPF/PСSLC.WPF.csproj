@@ -102,6 +102,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Consts\MessageBoxConsts.cs" />
+    <Compile Include="Consts\RecoveryConsts.cs" />
     <Compile Include="Consts\ServiceInstallerConsts.cs" />
     <Compile Include="Consts\ServiceInfoConsts.cs" />
     <Compile Include="Models\AppDataModel.cs" />

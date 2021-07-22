@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PСSLC.WPF"
         mc:Ignorable="d"
-        Title="Peace Computer Standby List Cleaner" Height="260" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Closing="window_MainWindow_Closing" Icon="Icons/Znak.ico" ShowInTaskbar="False" SizeToContent="WidthAndHeight">
+        Title="PCSLC" Height="260" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Closing="window_MainWindow_Closing" Icon="Icons/Znak.ico" ShowInTaskbar="False" SizeToContent="WidthAndHeight">
     <Grid SnapsToDevicePixels="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
