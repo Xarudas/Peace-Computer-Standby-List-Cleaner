@@ -34,7 +34,7 @@
         </Grid>
 
         <TextBlock x:Name="textBlock_ServiceInfo" Text="{Binding Path=ServiceInfo}" HorizontalAlignment="Left" Margin="0,198,0,0" VerticalAlignment="Top" Width="140" Height="25" Padding="3,5,0,0"/>
-        <TextBlock x:Name="textBlock_ChannelLink" Text="@Team Peace Duke" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto" Height="auto" TextAlignment="Right" Cursor="Hand" Margin="180,203,0,0" MouseLeftButtonUp="textBlock_ChannelLink_Click">
+        <TextBlock x:Name="textBlock_ChannelLink" Text="YouTube - Peace Duke" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto" Height="auto" TextAlignment="Right" Cursor="Hand" Margin="166,205,0,0" MouseLeftButtonUp="textBlock_ChannelLink_Click">
             <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </TextBlock.Foreground>
